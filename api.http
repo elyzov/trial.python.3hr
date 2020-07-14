@@ -1,0 +1,36 @@
+### Create product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+  "name": "Kitchen Table",
+  "rating": 1,
+  "featured": true,
+  "items_in_stock": 10,
+  "brand": "Adidas",
+  "categories": ["Kitchen", "Furniture"]
+}
+
+### Update product
+PUT http://localhost:5000/products/1
+Content-Type: application/json
+
+{
+  "rating": 3,
+  "items_in_stock": 5
+}
+
+### List products
+
+GET http://localhost:5000/products
+Content-Type: application/json
+
+### Get product
+
+GET http://localhost:5000/products/1
+Content-Type: application/json
+
+### Delete product
+
+DELETE http://localhost:5000/products/1
+Content-Type: application/json
